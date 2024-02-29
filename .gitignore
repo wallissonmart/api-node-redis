@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Cache
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+.idea/
+.vscode/
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+*.tgz
+
+# Yarn
+yarn-error.log
+yarn.lock
+
+# System
+.DS_Store
+Thumbs.db
