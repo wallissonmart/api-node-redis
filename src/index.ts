@@ -10,7 +10,7 @@ const getAllProducts = () => {
 
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(["Product 1213", "Product 2"]);
+      resolve(["Product 12", "Product 2"]);
     }, time);
   });
 };
