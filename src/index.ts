@@ -10,7 +10,7 @@ const getAllProducts = () => {
 
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(["Product 12", "Product 2"]);
+      resolve(["Product 123", "Product 2"]);
     }, time);
   });
 };
@@ -29,7 +29,6 @@ const rateLimit =
   };
 
 app.use(rateLimit("app", 8));
-
 
 app.get("/saved", async (req: Request, res: Response) => {
   await redisClient.del("getAllProducts");
