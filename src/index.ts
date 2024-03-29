@@ -3,14 +3,14 @@ import { createClient } from "redis";
 
 const redisClient = createClient();
 const app = express();
-const port = process.env.PORT || 1000;
+const port = process.env.PORT || 3000;
 
 const getAllProducts = () => {
   const time = Math.random() * 5000;
 
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(["Product 1", "Product 2"]);
+      resolve(["Product 1", "Product 1"]);
     }, time);
   });
 };
