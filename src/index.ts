@@ -6,11 +6,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const getAllProducts = () => {
-  const time = Math.random() * 5000;
+  const time = Math.random() * 500;
 
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(["Product 1", "Product 1"]);
+      resolve(["Product 1", "Product 2"]);
     }, time);
   });
 };
