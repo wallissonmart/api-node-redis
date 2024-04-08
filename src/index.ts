@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const getAllProducts = () => {
-  const time = Math.random() * 3000;
+  const time = Math.random() * 33000;
 
   return new Promise((resolve) => {
     setTimeout(() => {
